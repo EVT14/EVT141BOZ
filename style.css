@@ -57,7 +57,15 @@ body {
 		#content .slider  p {
             margin-left: 20px;
 			margin-right: 20px;
+			font-family: "Times New Roman", Georgia, Serif;
+			font-size: 18px;
 			} 		
+		#content .slider  table {
+            font-family: "Times New Roman", Georgia, Serif;
+			font-size: 18px;
+			
+			
+			} 	
  
 #clear {
             clear:both;
