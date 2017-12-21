@@ -63,9 +63,19 @@ body {
 		#content .slider  table {
             font-family: "Times New Roman", Georgia, Serif;
 			font-size: 18px;
-			
-			
 			} 	
+		#content #home_style p {
+				font-family: "Arial Black", Gadget, sans-serif;
+				margin-left: 20px;
+				margin-right: 20px;
+				font-size: 22px;
+				text-align: justify;
+				text-indent: 20;
+						}
+		#content #home_style a {
+				margin: 48px;
+						}
+			
  
 #clear {
             clear:both;
@@ -78,8 +88,11 @@ body {
 			border-radius: 0 0 20px 20px;
 }
 #footer-text {
-
+	width:200px;  
+	margin-left: 40px;
+    padding-top: 15px;
 }
+
 /* заголовк сайта */
 #logo{
 	width: 70px;
