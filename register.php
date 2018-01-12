@@ -1,6 +1,4 @@
-﻿<?php require_once("config/connection.php"); ?>
-
-<?php
+﻿<?php
 	
 	if(isset($_POST["register"])){
 	
@@ -9,12 +7,12 @@
 	$email=htmlspecialchars($_POST['email']);
  $username=htmlspecialchars($_POST['username']);
  $password=htmlspecialchars($_POST['password']);
- $query=mysql_query("SELECT * FROM registration WHEREusername='".$username."'");
-  $numrows=mysqli_num_rows($query);
+ $query=mysql_query("SELECT * FROM registration WHERE username='".$username."'");
+  $numrows=mysql_num_rows($query);
 if($numrows==0)
    {
 	$sql="INSERT INTO registration
-  (full_name, email, username,password)
+  (full_name, email, username, password)
 	VALUES('$full_name','$email', '$username', '$password')";
   $result=mysql_query($sql);
  if($result){

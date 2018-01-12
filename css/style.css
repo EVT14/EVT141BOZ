@@ -50,7 +50,7 @@ body {
             float: right;
             width: 80%;
  } 
-		.slider {
+#content .slider {
 				height: 750px; /* высота нашего блока */
 				overflow-y: scroll; /* прокрутка по вертикали */
 				}
@@ -64,17 +64,31 @@ body {
             font-family: "Times New Roman", Georgia, Serif;
 			font-size: 18px;
 			} 	
+					
 		#content #home_style p {
 				font-family: "Arial Black", Gadget, sans-serif;
 				margin-left: 20px;
 				margin-right: 20px;
 				font-size: 22px;
 				text-align: justify;
-				text-indent: 20;
+				text-indent: 55px;
 						}
 		#content #home_style a {
 				margin: 48px;
 						}
+						
+		#content #home_style h1 {
+				margin-left: 48px;
+						}
+						
+		#content #maps {
+				margin-left: 130px;
+						}
+						
+		.mail_style	{
+				margin-left: 40px;
+				}	
+						
 			
  
 #clear {
