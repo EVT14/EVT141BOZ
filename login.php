@@ -3,8 +3,9 @@
 	<?php include("includes/header.php"); ?>	 
 	<?php
 	
-	if(isset($_SESSION["full_name"])){
-	// вывод "Session is set"; // в целях проверки
+	if(isset($_SESSION["session_username"])){
+	//вывод 
+	"Session is set"; // в целях проверки
 	header("Location: intropage.php");
 	}
 
@@ -13,7 +14,7 @@
 	if(!empty($_POST['username']) && !empty($_POST['password'])) {
 	$username=htmlspecialchars($_POST['username']);
 	$password=htmlspecialchars($_POST['password']);
-	$query =mysql_query("SELECT * FROM registration WHEREusername='".$username."' AND password='".$password."'");
+	$query =mysql_query("SELECT * FROM registration WHERE username='".$username."' AND password='".$password."'");
 	$numrows=mysql_num_rows($query);
 	if($numrows!=0)
  {
@@ -26,7 +27,7 @@ while($row=mysql_fetch_assoc($query))
  {
 	// старое место расположения
 	//  session_start();
-	 $_SESSION['full_name']=$username;	 
+	 $_SESSION['session_username']=$username;	 
 	// Перенаправление браузера 
    header("Location: intropage.php");
 	}
@@ -41,7 +42,7 @@ while($row=mysql_fetch_assoc($query))
 	}
 	?>
 	
-<?php include("includes/header.php"); ?>
+<?php // include("includes/header.php"); ?> 
 		<div class="container mlogin">
 			<div id="login">
 					<h1>Вход</h1>

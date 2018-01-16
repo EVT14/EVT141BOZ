@@ -29,7 +29,7 @@
 	// функция отправки письма
 	function send_mail($message){
 		// почта, на которую придет письмо
-		$mail_to = "di.push@mail.ru"; 
+		$mail_to = "push@mail.ru"; 
 		// тема письма
 		$subject = "Письмо с обратной связи";
 		
@@ -117,10 +117,11 @@
                         <div id="content">
 						
 							<div class="slider">
+							<?= $msg_box; // вывод сообщений ?>
 								<div class= "mail_style">
 							
 									<br/>
-										<?= $msg_box; // вывод сообщений ?>
+										 <?= $msg_box; // вывод сообщений ?>
 										<br/>
 										<form action="<?=$_SERVER['PHP_SELF'];?>" method="post" name="frm_feedback">
 											<label>Ваше имя:</label><br/>
@@ -133,7 +134,7 @@
 											<textarea name="text_comment"><?=($_POST['text_comment']) ? $_POST['text_comment'] : ""; // сохраняем то, что вводили?></textarea>
 											
 											<br/>
-											<input type="submit" value="Отправить" name="btn_submit" />
+											<input class="button" type="submit" value="Отправить" name="btn_submit" />
 										</form>
 								</div>			
 						
